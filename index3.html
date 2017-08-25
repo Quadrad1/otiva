@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="css/clearsans.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/bootstrap-select.css" rel="stylesheet">
+<link href="css/nouislider.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script>
+$(document).ready(function(){
+   $('.selectpicker').selectpicker({width:'100%'});
+});
+</script>
+<script src="js/format.js"></script>
+<script>
+$(document).ready(function () {
+    $('[data-type="price"]').priceFormat();
+  });
+</script>
+<script src="js/maskedinput.js"></script>
+<script>
+$(document).ready(function () {
+  $('[data-type=num]').mask('9999 9999 9999 9999');
+});	
+</script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/modal-center.js"></script>
+<script src="js/modal-center.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- header -->
+<header>
+  <div class="container">
+    <div class="sidepad">
+      <div class="row">
+        <div class="col-1">
+          <div class="pull-left"><a href="#" class="logo"></a></div>
+          <div class="pull-right userbox"> <a href="#" class="user-link" data-toggle="dropdown">Настя <span class="caret"></span> </a>
+            <div class="dropdown-menu">
+              <ul class="usermenu">
+                <li><a href="#">Пополнить баланс</a></li>
+                <li><a href="#">Настройки</a></li>
+                <li class="text-center"><a href="#" class="btn btn-blue btn">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="pull-right"><a href="#" class="btn btn-bluebg"> Добавить обьявление </a></div>
+          <div class="pull-right"><a href="#" class="myfav updated"></a></div>
+          <div class="pull-right"><a href="#modal-deposit" data-toggle="modal">100 руб.</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- content -->
+<div class="container">
+  <div class="row">
+    <div class="sidepad"> 
+      <!-- sidebar -->
+      <div class="col-1">
+        <div class="side">
+          <div class="heading heading-noborder">
+            <form class="searchform">
+              <input id="search" type="search" autocomplete="off" placeholder="Поиск...">
+            </form>
+            <div class="profile unlogged"> <a href="#"> <span class="profile-btn"> <span class="icon24 icon-user2"></span> </span> </a> </div>
+          </div>
+          <div class="text-center"><img src="http://dummyimage.com/160x400/e8edf1/444b4f.gif&text=Баннер!"></div>
+          <br>
+          <div class="text-center"> <a href="#" class="btn btn-default btn-block"> Вернуть к объявлениям </a> <br>
+            <a href="#modal-deposit" class="btn btn-bluebg btn-block" data-toggle="modal"> Пополнить счет </a></div>
+        </div>
+      </div>
+      <!-- mainside -->
+      <div class="col-2">
+        <div class="fixed-heading">
+          <div class="container">
+            <div class="sidepad">
+              <ul class="heading-tabs">
+                <li class="active"><a href="#">Активные 25</a></li>
+                <li><a href="#">Завершенные 1</a></li>
+                <li><a href="#" class="text-grey">Блокрованные 0</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="padtop"></div>
+        <div class="item-box">
+          <div class="item-adv">
+            <div class="item-left">
+              <div class="item-image"> <a href="#"><img src="img/1.png" alt=""></a> <span class="item-image-count">3</span> </div>
+            </div>
+            <div class="item-body">
+              <h4 class="item-heading"><a href="#">Кроссовки Nike Air Max</a></h4>
+              <div class="hot"> vip <span class="icon16 icon-hot"></span> </div>
+              <div class="item-info item-info2"> <a href="#modal-pay" data-toggle="modal" class="btn btn-bluebg btn-sm">Продать быстрее</a> </div>
+              <div class="item-info">
+                <div class="price"> 15 000
+                  руб. </div>
+              </div>
+              <div class="item-info clearfix">
+                <div class="col" style="width:50%;"> <span class="icon20 icon-time"></span> Осталось: 21 день</div>
+                <div class="col"> <a href="#"><span class="icon20 icon-pen"></span> Редактировать</a> </div>
+                <div class="col text-right"> <a href="#delete-confirm" data-toggle="modal" class="item-del"> &times; </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-box ">
+          <div class="item-adv">
+            <div class="item-left">
+              <div class="item-image"> <a href="#"><img src="img/3.png" alt=""></a> <span class="item-image-count">3</span> </div>
+            </div>
+            <div class="item-body">
+              <h4 class="item-heading"><a href="#">Графический планшет Wacom Bamboo pentouch Medium</a></h4>
+              <div class="item-info item-info2"> <a href="#modal-pay" data-toggle="modal" class="btn btn-bluebg btn-sm">Продать быстрее</a> </div>
+              <div class="item-info">
+                <div class="price"> 15 000
+                  руб. </div>
+              </div>
+              <div class="item-info clearfix">
+                <div class="col" style="width:50%;"> <a href="#"> <span class="icon20 icon-check"></span> Активировать</a></div>
+                <div class="col"> <a href="#"><span class="icon20 icon-pen"></span> Редактировать</a> </div>
+                <div class="col text-right"> <a href="#delete-confirm" data-toggle="modal" class="item-del"> &times; </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-box item-blocked">
+          <div class="item-adv">
+            <div class="item-left">
+              <div class="item-image"> <a href="#"><img src="img/4.png" alt=""></a> <span class="item-image-count">3</span> </div>
+            </div>
+            <div class="item-body">
+              <h4 class="item-heading">Мужской кошелек от производителя</h4>
+              <div class="item-info item-info2"> <span class="btn btn-default  btn-sm">Заблокировано</span> </div>
+              <div class="item-info">
+                <div class="price"> 15 000
+                  руб. </div>
+              </div>
+              <div class="item-info clearfix">
+                <div class="col" style="width:50%;"> <span class="icon20 icon-time"></span> Осталось: 0 дней</div>
+                <div class="col text-right"> <a href="#delete-confirm" data-toggle="modal" class="item-del"> &times; </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-box">
+          <div class="item-adv">
+            <div class="item-left">
+              <div class="item-image"> <a href="#"><img src="img/5.png" alt=""></a> <span class="item-image-count">3</span> </div>
+            </div>
+            <div class="item-body">
+              <h4 class="item-heading"><a href="#">Бархатные очки вайфарер трапеция темно-синие</a></h4>
+              <div class="item-info item-info2"> <a href="#modal-pay" data-toggle="modal" class="btn btn-bluebg btn-sm">Продать быстрее</a> </div>
+              <div class="item-info">
+                <div class="price"> 15 000
+                  руб. </div>
+              </div>
+              <div class="item-info clearfix">
+                <div class="col" style="width:50%;"> <span class="icon20 icon-time"></span> Осталось: 21 день</div>
+                <div class="col"> <a href="#"><span class="icon20 icon-pen"></span> Редактировать</a> </div>
+                <div class="col text-right"> <a href="#delete-confirm" data-toggle="modal" class="item-del"> &times; </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="pagination">
+            <li class="active">1</li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li><a href="#">12</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="pull-left">
+      <nav> <a href="#modal-help" data-toggle="modal">Помощь</a> <a href="#">О компании</a> </nav>
+    </div>
+    <div class="pull-right"> Copyright © 2015 Site Name </div>
+  </div>
+</footer>
+<!-- modal-help -->
+<div class="modal" id="modal-help" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Помощь</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <div class="col-label">
+              <label class="form-label" >Тема:</label>
+            </div>
+            <div class="col-field">
+              <input type="email" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-label">
+              <label class="form-label" >Вопрос?</label>
+            </div>
+            <div class="col-field">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-label"> &nbsp; </div>
+            <div class="col-field">
+              <button class="btn btn-bluebg">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- delete-confirm -->
+<div class="modal" id="delete-confirm" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <p>Вы действительно хотите удалить это объявление?</p>
+          <br>
+          <p>
+            <button class="btn btn-bluebg">Подтвердить удаление</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal-pay -->
+<div class="modal" id="modal-pay" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Ускорить продажу</h4>
+      </div>
+      <div class="modal-body">
+        <div class="pays">
+          <div class="col">
+            <div class="pays-num">50руб.</div>
+            <div class="text-helper">Услуга позволяет ускорить продажу в 10 раз</div>
+          </div>
+          <div class="col">
+            <div class="cvv-info" ><span class="icon20 icon-lock"></span> HTTPS/SSL </div>
+            <div class="text-helper">Защищенное соединение</div>
+          </div>
+        </div>
+        <div class="text-center"> <a href="#" target="_blank" class="btn btn-bluebg">Оплатить 50 руб.</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal-deposit -->
+<div class="modal" id="modal-deposit" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Порполнить счет</h4>
+      </div>
+      <div class="modal-body">
+        <div class="pays">
+          <div class="col">
+            <div class="input-group">
+              <input type="text" class="form-control" value="100" data-type="price">
+              <div class="input-group-addon">руб.</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cvv-info" ><span class="icon20 icon-lock"></span> HTTPS/SSL </div>
+            <div class="text-helper">Защищенное соединение</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-bluebg">Пополнить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

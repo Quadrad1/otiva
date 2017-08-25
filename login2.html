@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link href="css/clearsans.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/bootstrap-select.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/modal-center.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body class="loginpage">
+<!-- header -->
+<header>
+  <div class="container">
+    <div class="sidepad">
+      <div class="row">
+        <div class="col-1">
+          <div class="pull-left"><a href="#" class="logo"></a></div>
+        </div>
+        <div class="col-2">
+          <div class="pull-right"><a href="#" class="btn btn-bluebg"> Добавить обьявление </a></div>
+          <div class="pull-right"><a href="#" class="myfav updated"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- content -->
+<div class="container"> 
+  <!-- login -->
+  <div class="centerbox loginbox">
+    <div class="regform forms">
+      <h3 class="reg-heading">Авторизация</h3>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Электронная почта">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control form-control-error" placeholder="Пароль" value="555555">
+        <p class="help-error">Неверный пароль</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Запомнить меня </label>
+      </div>
+      <button class="btn btn-bluebg">Войти</button>
+      <div class="loginlinks"><a href="#" class="loginlinks">Регистрация</a> &nbsp; &nbsp; <a href="#" class="loginlinks">Забили пароль?</a></div>
+      <hr>
+      <a href="#" class="alt alt-facebook"></a> <a href="#" class="alt alt-twitter"></a> <a href="#" class="alt alt-vk"></a> </div>
+  </div>
+</div>
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="pull-left">
+      <nav> <a href="#modal-help" data-toggle="modal">Помощь</a> <a href="#">О компании</a> </nav>
+    </div>
+    <div class="pull-right"> Copyright © 2015 Site Name </div>
+  </div>
+</footer>
+<!-- modal-help -->
+<div class="modal" id="modal-help" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Помощь</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <div class="col-label">
+              <label class="form-label" >Тема:</label>
+            </div>
+            <div class="col-field">
+              <input type="email" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-label">
+              <label class="form-label" >Вопрос?</label>
+            </div>
+            <div class="col-field">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-label"> &nbsp; </div>
+            <div class="col-field">
+              <button class="btn btn-bluebg">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
